@@ -45,7 +45,7 @@ namespace LolCringeCalculator.Resources
         public int Ap
         {
             get { return _AP;  }
-            set { _AP = value}
+            set { _AP = value; }
         }
 
         private int goldValue;
