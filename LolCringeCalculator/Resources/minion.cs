@@ -9,6 +9,13 @@ namespace LolCringeCalculator.Resources
 {
     class minion
     {
+        enum position
+        {
+            INIBIHOR_TOWER,
+            TIER_2_TOWER,
+            TIER_1_TOWER,
+            MIDDLE_OF_LANE
+        }
         private int _armour;
         public int armour
         {
@@ -79,6 +86,8 @@ namespace LolCringeCalculator.Resources
         {
             this.goldValue = goldValue;
         }
+
+
     }
 }
 
