@@ -12,12 +12,20 @@ namespace LolCringeCalculator.Resources
     {
         System.Timers.Timer timer;
 
+        enum position
+        {
+            INIBIHOR_TOWER,
+            TIER_2_TOWER,
+            TIER_1_TOWER,
+            MIDDLE_OF_LANE
+        }
         public Cringe(int waveInterval)
         {
             minion SiegeMinion = new minion(1, 60);
             minion MeleeMinion = new minion(3, 21);
             minion CasterMinion = new minion(3, 14);
             timer.Elapsed += Wave;
+           
         }
 
         private void Wave(object sender, ElapsedEventArgs e)
